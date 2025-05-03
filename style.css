@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 .main-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   padding-top: 50px;
   line-height: 45px;
@@ -74,7 +71,7 @@ article {
   background-image: url(./public/assets/iteration-2/cta/kart-1.png);
   background-size: cover;
   background-position: center;
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   border: 2px solid red;
   border-radius: 10px;
@@ -84,7 +81,6 @@ article {
 .right-img {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   width: 100%;
   gap: 5px;
 }
@@ -92,7 +88,6 @@ article {
   background-image: url(./public/assets/iteration-2/cta/kart-2.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
   padding: 20px;
   border: 2px solid #292929;
   border-radius: 10px;
@@ -101,7 +96,6 @@ article {
   background-image: url(./public/assets/iteration-2/cta/kart-3.png);
   background-size: cover;
   background-position: center;
-  height: 100%;
   padding: 20px;
   border: 4px solid #faf7f2;
   border-radius: 10px;
@@ -120,21 +114,18 @@ article {
   row-gap: 25px;
   color: #faf7f2;
   margin: 20px;
-  height: 30%;
 }
 .top-img-content {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   color: #faf7f2;
-  height: 30%;
 }
 .bottom-img-content {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   color: #292929;
-  height: 30%;
 }
 .thick {
   font-family: "Satisfy", cursive;
@@ -217,7 +208,6 @@ footer {
   display: flex;
   gap: 40px;
   padding: 40px;
-  align-items: flex-start;
 }
 .footer-content ul {
   list-style-type: none;
@@ -244,7 +234,7 @@ footer {
   gap: 30px;
 }
 .photos img {
-  width: 30%;
+  width: 32%;
 }
 .item-1 ul li::before {
   content: url(./public/assets/iteration-2/footer/icons/icon-1.png);
@@ -272,17 +262,15 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    justify-content: center;
   }
   .nav-items a {
     width: 40%;
-    display: flex;
-    align-items: center;
     gap: 5px;
   }
   .include-section {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .nav a {
     width: 35%;
@@ -297,7 +285,9 @@ footer {
     gap: 10px;
   }
   .footer-content {
+    text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
